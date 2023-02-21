@@ -13,8 +13,37 @@
 }
 
 body {
+    font-size: 0.875rem;
     font-family: 'Outfit', sans-serif;
-    /* background-color: #c6adef; */
-    background: #aaa;
-    /* color: #fff; */
+    background: var(--main-background);
+    color: var(--main-text-color)
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 1em;
+    border-bottom: 1.5px solid var(--accent-color);
+    padding: 0.5em 1em;
+}
+
+.logo {
+    width: 6rem;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    column-gap: 1.5em;
+    font-size: 0.75rem;
+}
+
+.nav-item-link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
 }
